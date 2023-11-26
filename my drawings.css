@@ -1,0 +1,43 @@
+/* my drawings.css */
+
+body {
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    background-color: #4ae342; /* Set a default background color for the container */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.selected-image {
+    border: 5px solid rgb(16, 2, 2); /* Change to black border for the selected image */
+}
+
+.black-background {
+    background-color: black; /* Apply a black background to the container */
+}
+
+/* Add additional styles as needed */
+/* Add this style to your existing CSS or your separate my drawings.css file */
+
+.selected-image {
+    border: 5px solid black;
+    /* Add a black background only around the selected image */
+    background-color: black;
+    padding: 5px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include border in the box size */
+}

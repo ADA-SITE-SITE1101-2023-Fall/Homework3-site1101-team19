@@ -1,0 +1,43 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #fce9f3;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Fantasy', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #f29bb3;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Times New Roman', serif;
+    border: 1px solid #f29bb3;
+    padding: 10px;
+}
+
+p, li, a {
+    font-family: 'Times New Roman', serif;
+}
+
+p {
+    background-color: #FFB6C1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+li {
+    color: #800080;
+}
+
+a:hover {
+    text-decoration: underline;
+}

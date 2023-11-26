@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my best drawings</title>
+    <link rel="stylesheet" href="my drawings.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image:hover {
+      transform: scale(1.1);
+    }
+
+    .selected-image {
+<<<<<<< HEAD
+      border: 5px solid black; /* Change to black border for the selected image */
+    }
+
+    .black-background {
+      background-color: black; /* Apply a black background to the container */
+=======
+      border: 5px solid white;
+    }
+
+    .white-background {
+      background-color: white;
+>>>>>>> d28108af27e691db497e331ff43555779e72b674
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container" id="imageContainer">
+    <img class="image" src="media/WhatsApp Image 2023-11-25 at 3.32.23 PM (2).jpeg" alt="First Picture" onclick="choosePicture(1)">
+    <img class="image" src="media/WhatsApp Image 2023-11-25 at 3.32.23 PM (3).jpeg" alt="Second Picture" onclick="choosePicture(2)">
+    <img class="image" src="media/WhatsApp Image 2023-11-25 at 3.32.24 PM (2).jpeg" alt="Third Picture" onclick="choosePicture(3)">
+    <img class="image" src="media/WhatsApp Image 2023-11-25 at 3.32.24 PM (3).jpeg" alt="Fourth Picture" onclick="choosePicture(4)">
+  </div>
+
+  <script>
+    function choosePicture(imageNumber) {
+      document.querySelectorAll('.image').forEach(img => {
+        img.classList.remove('selected-image');
+      });
+
+      const chosenImage = document.querySelector(`.image:nth-child(${imageNumber})`);
+      chosenImage.classList.add('selected-image');
+
+<<<<<<< HEAD
+      // Add the 'black-background' class to the image container
+      document.getElementById('imageContainer').classList.add('black-background');
+=======
+      document.getElementById('imageContainer').classList.add('white-background');
+>>>>>>> d28108af27e691db497e331ff43555779e72b674
+
+      alert(`You chose Picture ${imageNumber} as the best one!`);
+    }
+  </script>
+</body>
+</html>
